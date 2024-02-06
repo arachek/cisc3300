@@ -1,0 +1,33 @@
+* { 
+    color: red;
+}
+
+
+p {
+    color: blue;
+}
+
+.color-class {
+    color: purple;
+}
+
+#color-id {
+    color: green
+}
+
+.color-class p {
+    color: cyan
+}
+
+
+.color-class span {
+    color: yellow
+}
+
+.color-class + div {
+    color: pink
+}
+
+.coor-class + div {
+    color: navy
+}

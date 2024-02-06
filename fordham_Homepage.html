@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>homework3</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    </head>
+    <body>
+
+        <div class="fordham-header-container">
+            <h1>Fordham University</h1>
+        </div>
+        <div class ="title-box-container">
+            <h1>Undergraduate Admission</h1>
+        </div>
+        <div class ="links">
+            Why Fordham
+            <span class="space">/</span>
+            Majors and Minors
+            <span class="space">/</span>
+            Choose Your Campus
+            <span class="space">/</span>
+            Outcomes
+            <span class="space">/</span>
+            Visit
+            <span class="space">/</span>
+            Apply
+            <span class="space">/</span>
+            International Students
+            <span class="space">/</span>
+            Transfer Students
+            <span class="space">/</span>
+            Contact Us
+
+        </div>
+        <div class="parent-container">
+            <div class="majors-container">
+
+                <div class="majors-content-container">
+                    <p>Majors and Minors</p>
+                    <div class="majors-content-sub-container">
+                        <h5>What's your Passion?<h5>
+                        <h5>Accelerated Degree Programs</h5>
+                    </div>
+                    <div class="major-button">Majors and Minors</div>
+                </div>
+
+            </div>
+            <div class="computer-science-container">
+
+                <div class="computer-science-content-container">
+                    <div class="nav">
+
+                        Home
+                        <span class="divider">/</span>
+                        Admissions and Aid
+                        <span class="divider">/</span>
+                        Undergraduate Admission
+                        <span class="divider">/</span>
+                        Majors and Minors
+                        <span class="divider">/</span>
+                        Computer Science
+
+                    </div>
+                    <h1>Computer Science</h1>
+                    <div>Degree Options: Major, Minor</div>
+                    <div>Locations: Lincoln Center, Rose Hill</div>
+                    <div>Visit the <link href="https://www.fordham.edu/academics/departments/computer-and-information-science/"> Computer and Information Science Department</div>
+                    <div class="subtitle-container">
+                        <h3>Wherever there's a computer, there's a skilled person developing, maintaining, hacking, advancing or simply using it. Be that person.</h3>
+                    </div>
+                    <div class="main-text-container">
+                        <p>
+                            <div class="image">
+                                <img src="https://www.fordham.edu/media/review/content-assets/migrated/images/iStock_000021097427Medium.jpg" alt="Motherboard" width="200" height="200">
+                            </div>It's difficult to imagine life without computers when they're so central to our information-driven global society. But it's not difficult to imagine the amazing pursuits you'll be prepared for with a degree in computer science from Fordham's department of Computer and Information Sciences. <br>
+                            <br>
+
+                            The computer science major emphasizes science and technology, including software design and programming, computer architecture and functions, and the development of an ability to analyze and solve problems in using the computer as a tool. <br> <br>
+                            
+                            Get inspired by the classes we offer. Programming. Bioinformatics. Robotics. Video game design. Cyber security. Networking. Database management. Health and medical informatics. <br> <br>
+                            
+                            Our faculty members are active researchers driven by intellectual curiosity and the desire to make an impact. Join them in one of our labs. Requirements: open mind, warm heart, and lots of passion. <br> <br>
+                            
+                            You'll learn more than computer science here. You'll also study philosophy, theology, history, mathematics, languages, and the performing arts through Fordham's common core curriculum, the centerpiece of our liberal arts education. We want you to excel in your field—and as a human being.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <style>
+
+            body {
+                height: 100vh;
+                margin: 0;
+                font-family: 'Raleway';
+            }
+
+            .parent-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                position: relative;
+                order: 3;
+            }
+
+            .fordham-header-container {
+                background-color: white;
+                text-align: start;
+                padding: 20px;
+                color: maroon;
+
+
+
+            }
+            .title-box-container {
+                text-align: start;
+                flex-direction: column;
+                order: 2;
+                position: relative;
+                background-color: maroon;
+                color: white;
+                padding: 10px;
+            }
+
+            .computer-science-container {
+                order: 2;
+                padding: 100px 50px 0;
+            }
+
+            .majors-container {
+                order: 4;
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid #e7ebe7;
+            }
+            .majors-content-container {
+                padding: 100px;
+            }
+
+            .divider {
+                padding: 0 5px;
+            }
+            .space {
+                padding: 0 5px;
+            }
+
+            .links {
+                background-color: grey;
+            }
+
+            @media screen and (min-width: 1200px) {
+
+                .parent-container {
+                    flex-direction: row;
+                }
+                .computer-science-container {
+                    width: 900px;
+                    order: 3;
+                }
+
+                .majors-container {
+                    width: 300px;
+                    order: 2;
+                }
+            }
+
+            .majors-content-sub-container h5 {
+                color: black;
+
+            }
+
+            .majors-content-sub-container {
+                background-color: grey;
+                width: 200px;
+            }
+            .majors-container .majors-content-container p {
+                margin: 0;
+                color: maroon;
+                flex-wrap: nowrap;
+                width: 200px;
+            }
+            .major-button {
+                display:flex;
+                align-items: center;
+                text-align: center;
+                background-color: maroon;
+                color:white;
+                width: 175px;
+                height: 75px;
+                justify-content: center;
+            }
+
+            .computer-science-container .computer-science-content-container h1 {
+                margin: 0;
+                color: maroon;
+            }
+
+            .image {
+                float: right;
+            }
+            .main-text-container {
+                flex-wrap: wrap;
+                font-family: 'Raleway', sans-serif;
+            }
+
+        </style>
+
+    </body>
+</html>
