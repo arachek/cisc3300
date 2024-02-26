@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+  <button id="myButton">Click Here!</button>
+
+  <ul id="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Carrot</li>
+  </ul>
+
+  <div id="myDiv">
+  <button id="anotherButton">Second Button</button>
+</div>
+
+  </head>
+</html>
+
+<script>
+document.getElementById('myButton').addEventListener('click', function (e) {
+    this.innerText = "Changed the Text";
+  });
+
+
+  //6b
+  var listItems = document.querySelectorAll("#myList li");
+  listItems.forEach(function(item) {
+      item.addEventListener("click", function() {
+          listItems.forEach(function(li) {
+              li.style.color = "blue";
+          });
+      });
+  });
+
+  //6c
+  document.getElementById("anotherButton").addEventListener("click", function() {
+    var paragraph = document.createElement("p");
+    paragraph.textContent = "Here is a paragraph with some text!";
+    document.getElementById("myDiv").appendChild(paragraph);
+});
+</script>
